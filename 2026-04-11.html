@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI and Coding News Digest, 11 Apr 2026</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0b1020;
+      --card: #121a30;
+      --muted: #94a3b8;
+      --text: #e5eefc;
+      --accent: #7dd3fc;
+      --line: #24304d;
+      --chip: #1d2842;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f7fafc;
+        --card: #ffffff;
+        --muted: #5b6475;
+        --text: #111827;
+        --accent: #0369a1;
+        --line: #dbe4f0;
+        --chip: #eef6ff;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 32px 20px 56px; }
+    h1, h2, h3 { line-height: 1.2; margin: 0; }
+    .sub { color: var(--muted); margin-top: 10px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px 20px;
+      margin-top: 18px;
+      box-shadow: 0 8px 24px rgba(0,0,0,.08);
+    }
+    .meta { font-size: 13px; color: var(--muted); margin-top: 8px; }
+    .chips { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip {
+      background: var(--chip);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .item-title { font-size: 22px; margin-bottom: 6px; }
+    p { margin: 12px 0 0; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { margin: 12px 0 0 20px; padding: 0; }
+    li + li { margin-top: 10px; }
+    .footer { margin-top: 28px; color: var(--muted); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Daily AI and Coding News Digest</h1>
+    <p class="sub">Run time: Saturday, 11 April 2026, 5:15 PM Australia/Sydney (07:15 UTC)</p>
+    <p class="sub">Inclusion rule: only items first published between 2026-04-10 07:15 UTC and 2026-04-11 07:15 UTC. Older items were excluded even when relevant.</p>
+
+    <section class="card">
+      <h2>What stood out</h2>
+      <ul>
+        <li>GitHub dominated the fresh shipping cycle with multiple Copilot and Actions changes landing on April 10, including CLI metrics, cloud-agent speedups, and trial-policy changes.</li>
+        <li>AI coding workflows kept moving toward terminal and agent-first usage, with GitHub publishing a Copilot CLI tutorial and multiple telemetry and policy updates around Copilot usage.</li>
+        <li>Infra and ops news was strong too: Cloudflare crossed 500 Tbps of external capacity, Vercel shipped finer-grained anomaly alerts, and Google Cloud publicized deeper PostgreSQL core work.</li>
+        <li>NVIDIA kept physical AI in focus with a fresh National Robotics Week roundup spanning Isaac, Cosmos, and Newton.</li>
+      </ul>
+    </section>
+
+    <article class="card">
+      <h3 class="item-title"><a href="https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-getting-started-with-github-copilot-cli/">GitHub Copilot CLI for Beginners: Getting started with GitHub Copilot CLI</a></h3>
+      <div class="meta">GitHub Blog • Published 2026-04-10 16:00 UTC</div>
+      <p>GitHub published a step-by-step primer for using Copilot directly in the terminal. The tutorial covers installation, authentication, permissions, and the basic loop for asking the agent to inspect code, propose changes, and iterate without leaving the CLI.</p>
+      <div class="chips"><span class="chip">AI coding</span><span class="chip">CLI</span><span class="chip">Developer workflow</span></div>
+    </article>
+
+    <article class="card">
+      <h3 class="item-title"><a href="https://github.blog/changelog/2026-04-10-copilot-cloud-agents-validation-tools-are-now-20-faster">Copilot cloud agent's validation tools are now 20% faster</a></h3>
+      <div class="meta">GitHub Changelog • Published 2026-04-10 12:19 UTC</div>
+      <p>GitHub says the validation layer run by Copilot cloud agent, including security and quality checks such as CodeQL and secret scanning, is now 20% faster. That matters for teams treating cloud agents as a real CI-adjacent coding surface rather than a toy demo.</p>
+      <div class="chips"><span class="chip">Copilot</span><span class="chip">Cloud agents</span><span class="chip">Validation</span></div>
+    </article>
+
+    <article class="card">
+      <h3 class="item-title"><a href="https://github.blog/changelog/2026-04-10-copilot-cli-activity-now-included-in-usage-metrics-totals-and-feature-breakdowns">Copilot CLI activity now included in usage metrics totals and feature breakdowns</a></h3>
+      <div class="meta">GitHub Changelog • Published 2026-04-10 20:03 UTC</div>
+      <p>GitHub folded Copilot CLI activity into the main usage metrics totals and feature breakdowns instead of reporting CLI usage only in a separate section. That makes terminal-native Copilot activity more visible in the same reporting surface teams already watch.</p>
+      <div class="chips"><span class="chip">Usage metrics</span><span class="chip">CLI analytics</span><span class="chip">Platform ops</span></div>
+    </article>
+
+    <article class="card">
+      <h3 class="item-title"><a href="https://github.blog/changelog/2026-04-10-pausing-new-github-copilot-pro-trials">Pausing new GitHub Copilot Pro trials</a></h3>
+      <div class="meta">GitHub Changelog • Published 2026-04-10 20:25 UTC</div>
+      <p>GitHub paused new Copilot Pro trials, citing abuse of the free-trial system. It is a product-policy move rather than a model launch, but it is meaningful for individual developers who relied on quick trial access to evaluate the product.</p>
+      <div class="chips"><span class="chip">Copilot</span><span class="chip">Trials</span><span class="chip">Policy change</span></div>
+    </article>
+
+    <article class="card">
+      <h3 class="item-title"><a href="https://github.blog/changelog/2026-04-10-enforcing-new-limits-and-retiring-opus-4-6-fast-from-copilot-pro">Enforcing new limits and retiring Opus 4.6 Fast from Copilot Pro+</a></h3>
+      <div class="meta">GitHub Changelog • Published 2026-04-10 22:56 UTC</div>
+      <p>GitHub tightened Copilot Pro+ usage rules and retired Opus 4.6 Fast from that tier. The announcement signals more aggressive guardrails around concurrency and heavy usage as hosted coding-agent demand keeps climbing.</p>
+      <div class="chips"><span class="chip">Copilot Pro+</span><span class="chip">Usage limits</span><span class="chip">Model access</span></div>
+    </article>
+
+    <article class="card">
+      <h3 class="item-title"><a href="https://github.blog/changelog/2026-04-10-actions-workflows-are-limited-to-50-reruns">Actions workflows are limited to 50 reruns</a></h3>
+      <div class="meta">GitHub Changelog • Published 2026-04-10 20:03 UTC</div>
+      <p>GitHub now caps a workflow to 50 reruns. It is a straightforward operational change, but one that matters for teams that use Actions heavily during flaky CI diagnosis or agent-driven fix loops.</p>
+      <div class="chips"><span class="chip">GitHub Actions</span><span class="chip">CI</span><span class="chip">Developer infrastructure</span></div>
+    </article>
+
+    <article class="card">
+      <h3 class="item-title"><a href="https://blogs.nvidia.com/blog/national-robotics-week-2026/">National Robotics Week, Latest Physical AI Research, Breakthroughs and Resources</a></h3>
+      <div class="meta">NVIDIA Blog • Published 2026-04-10 19:40 UTC</div>
+      <p>NVIDIA used National Robotics Week to bundle recent physical AI work into one roundup, highlighting Isaac GR00T open models, Cosmos world models, Newton 1.0 general availability, and newer simulation tooling aimed at speeding the path from virtual training to real-world robots.</p>
+      <div class="chips"><span class="chip">Physical AI</span><span class="chip">Robotics</span><span class="chip">Simulation</span></div>
+    </article>
+
+    <article class="card">
+      <h3 class="item-title"><a href="https://blog.cloudflare.com/500-tbps-of-capacity/">500 Tbps of capacity: 16 years of scaling our global network</a></h3>
+      <div class="meta">Cloudflare Blog • Published 2026-04-10 18:00 UTC</div>
+      <p>Cloudflare said its network has crossed 500 Tbps of external capacity. It is not an AI model release, but it is real developer-infrastructure news for anyone building or operating latency-sensitive, globally distributed AI and web products.</p>
+      <div class="chips"><span class="chip">Infra</span><span class="chip">Cloud</span><span class="chip">Scale</span></div>
+    </article>
+
+    <article class="card">
+      <h3 class="item-title"><a href="https://vercel.com/changelog/anomaly-alert-configuration-now-available">Anomaly alert configuration now available</a></h3>
+      <div class="meta">Vercel Changelog • Published 2026-04-10 16:00 UTC</div>
+      <p>Vercel added granular anomaly-alert configuration, letting teams tune when alerts fire and where they land. That is a useful quality-of-life release for production teams trying to cut noisy observability signals without losing important incidents.</p>
+      <div class="chips"><span class="chip">Observability</span><span class="chip">Alerts</span><span class="chip">Frontend infra</span></div>
+    </article>
+
+    <article class="card">
+      <h3 class="item-title"><a href="https://www.infoq.com/news/2026/04/google-cloud-postgresql/">Google Cloud Highlights Ongoing Work on PostgreSQL Core Capabilities</a></h3>
+      <div class="meta">InfoQ • Published 2026-04-10 09:30 UTC</div>
+      <p>InfoQ reported on Google Cloud outlining recent contributions to PostgreSQL core, including logical replication, upgrade flow, and stability work. It is more database-platform news than model news, but it is squarely relevant to the developer stack underneath modern AI applications.</p>
+      <div class="chips"><span class="chip">Databases</span><span class="chip">PostgreSQL</span><span class="chip">Platform engineering</span></div>
+    </article>
+
+    <section class="card">
+      <h2>Coverage note</h2>
+      <p>This run checked 54 sources across vendor blogs, changelogs, research pages, dev-infra news, Hacker News, Reddit communities, Lobsters, Dev.to, and InfoQ. Newly discovered sources checked during the run included Cursor’s blog, Zed’s blog, Microsoft’s unified developer changelog, the OpenAI API changelog, and the Gemini API changelog. Primary sources were preferred for final citations where available.</p>
+    </section>
+
+    <p class="footer">Prepared locally as HTML for stable publishing. Intended Telegram recipient for downstream delivery: 1456554571.</p>
+  </main>
+</body>
+</html>
