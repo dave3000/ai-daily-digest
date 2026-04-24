@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI and Coding News Digest, 2026-04-24</title>
+  <style>
+    body { font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif; margin: 0; background: #f6f7fb; color: #172033; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 32px 20px 56px; }
+    h1 { margin: 0 0 8px; font-size: 34px; }
+    .sub { color: #51607a; margin-bottom: 24px; }
+    .card { background: white; border-radius: 16px; padding: 22px 24px; box-shadow: 0 8px 28px rgba(23,32,51,.08); margin-bottom: 18px; }
+    .meta { font-size: 14px; color: #5b6b85; margin-bottom: 10px; }
+    h2 { margin: 0 0 8px; font-size: 24px; }
+    p { line-height: 1.55; }
+    a { color: #0a66ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { margin-top: 8px; }
+    .small { font-size: 14px; color: #5b6b85; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Daily AI and Coding News Digest</h1>
+    <div class="sub">Run time: 2026-04-24 08:20 UTC. Window: first published in the prior 24 hours only.</div>
+
+    <div class="card">
+      <h2>Coverage</h2>
+      <p>This run checked 49 sources across communities and forums, vendor blogs and changelogs, research pages, and developer news sources. The widened scout pass covered Hacker News, Lobsters, 9 Reddit communities, DEV Community AI, vendor feeds, changelogs, research blogs, and trade press. Only items first published inside the last 24 hours were eligible for inclusion.</p>
+      <p class="small">Fresh-item sources found in this run included OpenAI, GitHub Changelog, Microsoft DevBlogs, Azure SDK, Google AI Blog, AWS Machine Learning Blog, Databricks, NVIDIA Developer Blog, TechCrunch AI, Simon Willison, The Register AI, Hacker News, Lobsters, and several Reddit communities.</p>
+    </div>
+
+    <div class="card">
+      <div class="meta">OpenAI, 2026-04-23 11:00 UTC</div>
+      <h2><a href="https://openai.com/index/introducing-gpt-5-5/">Introducing GPT-5.5</a></h2>
+      <p>OpenAI released GPT-5.5, positioning it as a stronger model for agentic coding, computer use, knowledge work, and early scientific research. The launch post says it matches GPT-5.4 latency while improving intelligence and reducing token use on Codex tasks, with rollout starting in ChatGPT and Codex for paid tiers.</p>
+    </div>
+
+    <div class="card">
+      <div class="meta">GitHub Changelog, 2026-04-23 19:58 UTC</div>
+      <h2><a href="https://github.blog/changelog/2026-04-23-copilot-chat-improvements-for-pull-requests/">Copilot Chat improvements for pull requests</a></h2>
+      <p>GitHub added deeper pull request context to Copilot Chat, including comments, file changes, commits, and reviews. It also introduced structured pull request review and summary abilities, which makes Copilot more useful directly on diffs and PRs rather than only in general chat.</p>
+    </div>
+
+    <div class="card">
+      <div class="meta">Azure SDK Blog, 2026-04-23 20:56 UTC</div>
+      <h2><a href="https://devblogs.microsoft.com/azure-sdk/azure-mcp-server-mcpb-support/">Azure MCP Server now available as an MCP Bundle (.mcpb)</a></h2>
+      <p>Microsoft packaged the Azure MCP Server as a self-contained MCP bundle so it can be installed into Claude Desktop and other MCP clients without separately managing Node, Python, .NET, or Docker. That lowers setup friction for Azure-connected agent tooling and should widen adoption beyond developers who are comfortable with local runtime plumbing.</p>
+    </div>
+
+    <div class="card">
+      <div class="meta">Databricks Blog, 2026-04-23 23:00 UTC</div>
+      <h2><a href="https://www.databricks.com/blog/databricks-partners-openai-gpt-55">Databricks partners with OpenAI on GPT-5.5</a></h2>
+      <p>Databricks said it is partnering with OpenAI on GPT-5.5 and highlighted gains on enterprise-style document reasoning and long-horizon coding workflows. The post leans heavily on OfficeQA benchmark results and frames the model as a better fit for multi-step retrieval, analysis, and agent execution inside enterprise data workflows.</p>
+    </div>
+
+    <div class="card">
+      <div class="meta">Google AI Blog, 2026-04-23 12:00 UTC</div>
+      <h2><a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/what-is-a-tpu/">Here’s how Google TPUs power increasingly demanding AI workloads</a></h2>
+      <p>Google published a TPU explainer focused on the company’s custom AI chips and the increasing compute demands of modern models. The main fresh detail is scale positioning: the newest TPU generation is described as reaching 121 exaflops with double the bandwidth of the prior generation.</p>
+    </div>
+
+    <div class="card">
+      <div class="meta">AWS Machine Learning Blog, 2026-04-23 16:17 UTC</div>
+      <h2><a href="https://aws.amazon.com/blogs/machine-learning/applying-multimodal-biological-foundation-models-across-therapeutics-and-patient-care/">Applying multimodal biological foundation models across therapeutics and patient care</a></h2>
+      <p>AWS published a detailed piece on multimodal biological foundation models, arguing that healthcare and life sciences teams need models that connect biological data, medical images, clinical reports, and patient records rather than treating them as separate systems. The post is more infrastructure-and-workflow oriented than product-launch oriented, but it is a meaningful signal about where cloud AI vendors are pushing applied model adoption.</p>
+    </div>
+
+    <div class="card">
+      <div class="meta">NVIDIA Developer Blog, 2026-04-23 20:15 UTC</div>
+      <h2><a href="https://developer.nvidia.com/blog/winning-a-kaggle-competition-with-generative-ai-assisted-coding/">Winning a Kaggle competition with generative AI-assisted coding</a></h2>
+      <p>NVIDIA published a concrete case study of LLM-assisted competitive ML work: three agents generating more than 600,000 lines of code, running 850 experiments, and contributing to a first-place Kaggle result. It is one of the clearer practical reports this cycle on AI coding agents changing the speed of experiment generation, not just code completion.</p>
+    </div>
+
+    <div class="card">
+      <div class="meta">Docker Blog, 2026-04-23 15:32 UTC</div>
+      <h2><a href="https://www.docker.com/blog/trivy-kics-and-the-shape-of-supply-chain-attacks-so-far-in-2026/">Trivy, KICS, and the shape of supply chain attacks so far in 2026</a></h2>
+      <p>Docker’s security post looked at the 2026 supply chain attack pattern through incidents around Trivy and KICS. It is not an AI-model launch, but it matters to AI and coding workflows because agent-heavy development stacks increasingly depend on broad package ecosystems and automated build pipelines, which make supply chain hygiene more important, not less.</p>
+    </div>
+
+    <div class="card">
+      <div class="meta">Context from community scouting</div>
+      <h2>What the community layer was talking about</h2>
+      <ul>
+        <li>Hacker News and Simon Willison both surfaced rapid discussion around GPT-5.5 and coding-agent behavior.</li>
+        <li>Reddit communities remained active on local models, OpenAI, and general AI tooling, helping widen discovery even where final citations stayed with primary sources.</li>
+        <li>Trade press and forum coverage helped identify what was actually resonating outside vendor launch copy before final selection.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
