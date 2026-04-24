@@ -1,92 +1,460 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AI and Coding News Digest, 2026-04-24</title>
-  <style>
-    body { font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif; margin: 0; background: #f6f7fb; color: #172033; }
-    .wrap { max-width: 900px; margin: 0 auto; padding: 32px 20px 56px; }
-    h1 { margin: 0 0 8px; font-size: 34px; }
-    .sub { color: #51607a; margin-bottom: 24px; }
-    .card { background: white; border-radius: 16px; padding: 22px 24px; box-shadow: 0 8px 28px rgba(23,32,51,.08); margin-bottom: 18px; }
-    .meta { font-size: 14px; color: #5b6b85; margin-bottom: 10px; }
-    h2 { margin: 0 0 8px; font-size: 24px; }
-    p { line-height: 1.55; }
-    a { color: #0a66ff; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    ul { margin-top: 8px; }
-    .small { font-size: 14px; color: #5b6b85; }
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <h1>Daily AI and Coding News Digest</h1>
-    <div class="sub">Run time: 2026-04-24 08:20 UTC. Window: first published in the prior 24 hours only.</div>
 
-    <div class="card">
-      <h2>Coverage</h2>
-      <p>This run checked 49 sources across communities and forums, vendor blogs and changelogs, research pages, and developer news sources. The widened scout pass covered Hacker News, Lobsters, 9 Reddit communities, DEV Community AI, vendor feeds, changelogs, research blogs, and trade press. Only items first published inside the last 24 hours were eligible for inclusion.</p>
-      <p class="small">Fresh-item sources found in this run included OpenAI, GitHub Changelog, Microsoft DevBlogs, Azure SDK, Google AI Blog, AWS Machine Learning Blog, Databricks, NVIDIA Developer Blog, TechCrunch AI, Simon Willison, The Register AI, Hacker News, Lobsters, and several Reddit communities.</p>
-    </div>
-
-    <div class="card">
-      <div class="meta">OpenAI, 2026-04-23 11:00 UTC</div>
-      <h2><a href="https://openai.com/index/introducing-gpt-5-5/">Introducing GPT-5.5</a></h2>
-      <p>OpenAI released GPT-5.5, positioning it as a stronger model for agentic coding, computer use, knowledge work, and early scientific research. The launch post says it matches GPT-5.4 latency while improving intelligence and reducing token use on Codex tasks, with rollout starting in ChatGPT and Codex for paid tiers.</p>
-    </div>
-
-    <div class="card">
-      <div class="meta">GitHub Changelog, 2026-04-23 19:58 UTC</div>
-      <h2><a href="https://github.blog/changelog/2026-04-23-copilot-chat-improvements-for-pull-requests/">Copilot Chat improvements for pull requests</a></h2>
-      <p>GitHub added deeper pull request context to Copilot Chat, including comments, file changes, commits, and reviews. It also introduced structured pull request review and summary abilities, which makes Copilot more useful directly on diffs and PRs rather than only in general chat.</p>
-    </div>
-
-    <div class="card">
-      <div class="meta">Azure SDK Blog, 2026-04-23 20:56 UTC</div>
-      <h2><a href="https://devblogs.microsoft.com/azure-sdk/azure-mcp-server-mcpb-support/">Azure MCP Server now available as an MCP Bundle (.mcpb)</a></h2>
-      <p>Microsoft packaged the Azure MCP Server as a self-contained MCP bundle so it can be installed into Claude Desktop and other MCP clients without separately managing Node, Python, .NET, or Docker. That lowers setup friction for Azure-connected agent tooling and should widen adoption beyond developers who are comfortable with local runtime plumbing.</p>
-    </div>
-
-    <div class="card">
-      <div class="meta">Databricks Blog, 2026-04-23 23:00 UTC</div>
-      <h2><a href="https://www.databricks.com/blog/databricks-partners-openai-gpt-55">Databricks partners with OpenAI on GPT-5.5</a></h2>
-      <p>Databricks said it is partnering with OpenAI on GPT-5.5 and highlighted gains on enterprise-style document reasoning and long-horizon coding workflows. The post leans heavily on OfficeQA benchmark results and frames the model as a better fit for multi-step retrieval, analysis, and agent execution inside enterprise data workflows.</p>
-    </div>
-
-    <div class="card">
-      <div class="meta">Google AI Blog, 2026-04-23 12:00 UTC</div>
-      <h2><a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/what-is-a-tpu/">Here’s how Google TPUs power increasingly demanding AI workloads</a></h2>
-      <p>Google published a TPU explainer focused on the company’s custom AI chips and the increasing compute demands of modern models. The main fresh detail is scale positioning: the newest TPU generation is described as reaching 121 exaflops with double the bandwidth of the prior generation.</p>
-    </div>
-
-    <div class="card">
-      <div class="meta">AWS Machine Learning Blog, 2026-04-23 16:17 UTC</div>
-      <h2><a href="https://aws.amazon.com/blogs/machine-learning/applying-multimodal-biological-foundation-models-across-therapeutics-and-patient-care/">Applying multimodal biological foundation models across therapeutics and patient care</a></h2>
-      <p>AWS published a detailed piece on multimodal biological foundation models, arguing that healthcare and life sciences teams need models that connect biological data, medical images, clinical reports, and patient records rather than treating them as separate systems. The post is more infrastructure-and-workflow oriented than product-launch oriented, but it is a meaningful signal about where cloud AI vendors are pushing applied model adoption.</p>
-    </div>
-
-    <div class="card">
-      <div class="meta">NVIDIA Developer Blog, 2026-04-23 20:15 UTC</div>
-      <h2><a href="https://developer.nvidia.com/blog/winning-a-kaggle-competition-with-generative-ai-assisted-coding/">Winning a Kaggle competition with generative AI-assisted coding</a></h2>
-      <p>NVIDIA published a concrete case study of LLM-assisted competitive ML work: three agents generating more than 600,000 lines of code, running 850 experiments, and contributing to a first-place Kaggle result. It is one of the clearer practical reports this cycle on AI coding agents changing the speed of experiment generation, not just code completion.</p>
-    </div>
-
-    <div class="card">
-      <div class="meta">Docker Blog, 2026-04-23 15:32 UTC</div>
-      <h2><a href="https://www.docker.com/blog/trivy-kics-and-the-shape-of-supply-chain-attacks-so-far-in-2026/">Trivy, KICS, and the shape of supply chain attacks so far in 2026</a></h2>
-      <p>Docker’s security post looked at the 2026 supply chain attack pattern through incidents around Trivy and KICS. It is not an AI-model launch, but it matters to AI and coding workflows because agent-heavy development stacks increasingly depend on broad package ecosystems and automated build pipelines, which make supply chain hygiene more important, not less.</p>
-    </div>
-
-    <div class="card">
-      <div class="meta">Context from community scouting</div>
-      <h2>What the community layer was talking about</h2>
-      <ul>
-        <li>Hacker News and Simon Willison both surfaced rapid discussion around GPT-5.5 and coding-agent behavior.</li>
-        <li>Reddit communities remained active on local models, OpenAI, and general AI tooling, helping widen discovery even where final citations stayed with primary sources.</li>
-        <li>Trade press and forum coverage helped identify what was actually resonating outside vendor launch copy before final selection.</li>
-      </ul>
-    </div>
-  </div>
-</body>
-</html>
+      <!DOCTYPE html>
+      <html>
+      <head>
+          <title>AI News Digest</title>
+          <style>
+              body { font-family: sans-serif; margin: 2em; }
+              .item { margin-bottom: 1.5em; padding-bottom: 1.5em; border-bottom: 1px solid #eee; }
+              .item h2 { margin-top: 0; }
+              .item a { color: #0056b3; text-decoration: none; }
+              .item a:hover { text-decoration: underline; }
+          </style>
+      </head>
+      <body>
+          <h1>AI News Digest - Friday 24 April 2026</h1>
+    
+        <div class="item">
+            <h2><a href="https://github.com/matz/spinel">Spinel: Ruby AOT Native Compiler</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://github.com/matz/spinel">https://github.com/matz/spinel</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.cambra.dev/blog/announcement/">Composition Shouldn't be this Hard</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.cambra.dev/blog/announcement/">https://www.cambra.dev/blog/announcement/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://ynarwal.github.io/how-llms-work/">Show HN: How LLMs Work – Interactive visual guide based on Karpathy's lecture</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://ynarwal.github.io/how-llms-work/">https://ynarwal.github.io/how-llms-work/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://github.com/NV404/gova">Show HN: Gova – The declarative GUI framework for Go</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://github.com/NV404/gova">https://github.com/NV404/gova</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://mceglowski.substack.com/p/why-not-venus">Why Not Venus?</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://mceglowski.substack.com/p/why-not-venus">https://mceglowski.substack.com/p/why-not-venus</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://news.ycombinator.com/item?id=47887549">Ask HN: Chrome, Brave, Firefox or Something Else?</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://news.ycombinator.com/item?id=47887549">https://news.ycombinator.com/item?id=47887549</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.youtube.com/watch?v=xjo0iLssbI8">I caught an Illegal Russian Spy [video]</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.youtube.com/watch?v=xjo0iLssbI8">https://www.youtube.com/watch?v=xjo0iLssbI8</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://github.com/kyutai-labs/ovie">Ovie – One view is enough</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://github.com/kyutai-labs/ovie">https://github.com/kyutai-labs/ovie</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://github.com/tenox7/dufus/">A GUI disk image writer for macOS. For when you're tired of dd</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://github.com/tenox7/dufus/">https://github.com/tenox7/dufus/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://fitly-app.onrender.com/">Fit.ly – AI Outfit Generation</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://fitly-app.onrender.com/">https://fitly-app.onrender.com/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://socket.dev/blog/bitwarden-cli-compromised">Bitwarden CLI Compromised in Ongoing Checkmarx Supply Chain</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://socket.dev/blog/bitwarden-cli-compromised">https://socket.dev/blog/bitwarden-cli-compromised</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://theconsensus.dev/p/2026/04/16/who-even-uses-jemalloc-anyway.html">Who even uses jemalloc in 2026 anyway? (many major projects)</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://theconsensus.dev/p/2026/04/16/who-even-uses-jemalloc-anyway.html">https://theconsensus.dev/p/2026/04/16/who-even-uses-jemalloc-anyway.html</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://discourse.ubuntu.com/t/an-update-on-rust-coreutils/80773">Security issues found within rust-coreutils</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://discourse.ubuntu.com/t/an-update-on-rust-coreutils/80773">https://discourse.ubuntu.com/t/an-update-on-rust-coreutils/80773</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://lobste.rs/s/g9jlyl/what_are_best_developer_tools_built">What are the best developer tools built around Markdown?</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://lobste.rs/s/g9jlyl/what_are_best_developer_tools_built">https://lobste.rs/s/g9jlyl/what_are_best_developer_tools_built</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://documentation.ubuntu.com/release-notes/26.04/">Ubuntu 26.04 LTS Release</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://documentation.ubuntu.com/release-notes/26.04/">https://documentation.ubuntu.com/release-notes/26.04/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/OpenAI/comments/1sua566/why_they_do_not_test_gpts_pro_model_on_all_the/">Why they do not test GPT's pro model on all the benchmarks?</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/OpenAI/comments/1sua566/why_they_do_not_test_gpts_pro_model_on_all_the/">https://www.reddit.com/r/OpenAI/comments/1sua566/why_they_do_not_test_gpts_pro_model_on_all_the/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/OpenAI/comments/1sua2so/how_can_gpt_55_pro_be_lower_than_gpt_54_pro_on/">How can GPT 5.5 Pro be lower than GPT 5.4 Pro on the benchmark of HLE (w/ tools)?</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/OpenAI/comments/1sua2so/how_can_gpt_55_pro_be_lower_than_gpt_54_pro_on/">https://www.reddit.com/r/OpenAI/comments/1sua2so/how_can_gpt_55_pro_be_lower_than_gpt_54_pro_on/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/OpenAI/comments/1sua0zd/why_people_still_using_it_even_after_scientific/">Why people still using it even after scientific studies confirmed, that's it's simply a tool of Neo-Marxist political propaganda (link attached)</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/OpenAI/comments/1sua0zd/why_people_still_using_it_even_after_scientific/">https://www.reddit.com/r/OpenAI/comments/1sua0zd/why_people_still_using_it_even_after_scientific/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/OpenAI/comments/1su9t2q/agentic_coding_regression_for_55/">Agentic Coding Regression for 5.5?</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/OpenAI/comments/1su9t2q/agentic_coding_regression_for_55/">https://www.reddit.com/r/OpenAI/comments/1su9t2q/agentic_coding_regression_for_55/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/OpenAI/comments/1su9g2c/claude_codex_excellence/">Claude + Codex = Excellence</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/OpenAI/comments/1su9g2c/claude_codex_excellence/">https://www.reddit.com/r/OpenAI/comments/1su9g2c/claude_codex_excellence/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1sua4zu/canadas_ai_startup_cohere_buys_germanys_aleph/">Canada's AI startup Cohere buys Germany's Aleph Alpha to expand in Europe</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/LocalLLaMA/comments/1sua4zu/canadas_ai_startup_cohere_buys_germanys_aleph/">https://www.reddit.com/r/LocalLLaMA/comments/1sua4zu/canadas_ai_startup_cohere_buys_germanys_aleph/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1sua2rr/budget_to_run_deepseek_v4_locally_at_fp4_precision/">Budget to run Deepseek V4 locally at FP4 precision</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/LocalLLaMA/comments/1sua2rr/budget_to_run_deepseek_v4_locally_at_fp4_precision/">https://www.reddit.com/r/LocalLLaMA/comments/1sua2rr/budget_to_run_deepseek_v4_locally_at_fp4_precision/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1su9zw9/opensource_embeddings_give_better_results_than/">Open-source embeddings give better results than OpenAI and Cohere on cross-lingual retrieval of EPG data for a low-resource language</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/LocalLLaMA/comments/1su9zw9/opensource_embeddings_give_better_results_than/">https://www.reddit.com/r/LocalLLaMA/comments/1su9zw9/opensource_embeddings_give_better_results_than/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1su9zb0/maxandomnisnemotron3super64ba12bmathreapgguf/">Max-and-Omnis/Nemotron-3-Super-64B-A12B-Math-REAP-GGUF</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/LocalLLaMA/comments/1su9zb0/maxandomnisnemotron3super64ba12bmathreapgguf/">https://www.reddit.com/r/LocalLLaMA/comments/1su9zb0/maxandomnisnemotron3super64ba12bmathreapgguf/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1su9yva/qwen36_35ba3b_is_quite_useful_on_780m_igpu/">Qwen3.6 35B-A3B is quite useful on 780m iGPU (llama.cpp,vulkan)</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/LocalLLaMA/comments/1su9yva/qwen36_35ba3b_is_quite_useful_on_780m_igpu/">https://www.reddit.com/r/LocalLLaMA/comments/1su9yva/qwen36_35ba3b_is_quite_useful_on_780m_igpu/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/MachineLearning/comments/1su8rq1/icml_2026_final_predictions_on_average_score/">ICML 2026 - Final Predictions on Average Score Needed Before Scores Come Out in 1 week? [D]</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/MachineLearning/comments/1su8rq1/icml_2026_final_predictions_on_average_score/">https://www.reddit.com/r/MachineLearning/comments/1su8rq1/icml_2026_final_predictions_on_average_score/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/MachineLearning/comments/1su5i3z/nanochat_vs_llama_for_training_from_scratch_p/">Nanochat vs Llama for training from scratch? [P]</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/MachineLearning/comments/1su5i3z/nanochat_vs_llama_for_training_from_scratch_p/">https://www.reddit.com/r/MachineLearning/comments/1su5i3z/nanochat_vs_llama_for_training_from_scratch_p/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/MachineLearning/comments/1stmn7h/built_a_normalizer_so_wer_stops_penalizing/">Built a normalizer so WER stops penalizing formatting differences in STT evals! [P]</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/MachineLearning/comments/1stmn7h/built_a_normalizer_so_wer_stops_penalizing/">https://www.reddit.com/r/MachineLearning/comments/1stmn7h/built_a_normalizer_so_wer_stops_penalizing/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/MachineLearning/comments/1sti4mx/opensimula_open_implementation_of_simulastyle/">OpenSimula — open implementation of Simula-style mechanism design for synthetic data (in AfterImage) [P]</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/MachineLearning/comments/1sti4mx/opensimula_open_implementation_of_simulastyle/">https://www.reddit.com/r/MachineLearning/comments/1sti4mx/opensimula_open_implementation_of_simulastyle/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/MachineLearning/comments/1stfkms/uai_2026_reviews_waiting_place_d/">UAI 2026 Reviews Waiting Place [D]</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/MachineLearning/comments/1stfkms/uai_2026_reviews_waiting_place_d/">https://www.reddit.com/r/MachineLearning/comments/1stfkms/uai_2026_reviews_waiting_place_d/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/singularity/comments/1su9hxc/the_switch_that_quantum_networking_has_been/">The switch that quantum networking has been waiting for</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/singularity/comments/1su9hxc/the_switch_that_quantum_networking_has_been/">https://www.reddit.com/r/singularity/comments/1su9hxc/the_switch_that_quantum_networking_has_been/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/singularity/comments/1su8gds/the_car_wash_question_is_oversaturated_use_this/">The car wash question is oversaturated, use this instead:</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/singularity/comments/1su8gds/the_car_wash_question_is_oversaturated_use_this/">https://www.reddit.com/r/singularity/comments/1su8gds/the_car_wash_question_is_oversaturated_use_this/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/singularity/comments/1su7tas/big_model_feel_with_gpt_55/">Big model feel with GPT 5.5</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/singularity/comments/1su7tas/big_model_feel_with_gpt_55/">https://www.reddit.com/r/singularity/comments/1su7tas/big_model_feel_with_gpt_55/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/singularity/comments/1su6zki/deepseekv4_drops_opensource_push_toward_cheaper/">DeepSeek-V4 Drops: Open-Source Push Toward Cheaper, Long-Context AI.</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/singularity/comments/1su6zki/deepseekv4_drops_opensource_push_toward_cheaper/">https://www.reddit.com/r/singularity/comments/1su6zki/deepseekv4_drops_opensource_push_toward_cheaper/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/singularity/comments/1su5f0k/deepseek_confirms_huaweibased_v4_inference_after/">DeepSeek confirms Huawei-based V4 inference: "After the 950 supernodes are launched at scale in the second half of this year, the price of Pro is expected to be reduced significantly."</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/singularity/comments/1su5f0k/deepseek_confirms_huaweibased_v4_inference_after/">https://www.reddit.com/r/singularity/comments/1su5f0k/deepseek_confirms_huaweibased_v4_inference_after/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/programming/comments/1su7irb/why_i_spent_years_trying_to_make_css_states/">Why I spent years trying to make CSS states predictable</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/programming/comments/1su7irb/why_i_spent_years_trying_to_make_css_states/">https://www.reddit.com/r/programming/comments/1su7irb/why_i_spent_years_trying_to_make_css_states/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/programming/comments/1su5w1d/while_github_actions_remains_a_key_part_of_this/">While GitHub Actions remains a key part of this vision, we are allocating resources towards other areas ...</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/programming/comments/1su5w1d/while_github_actions_remains_a_key_part_of_this/">https://www.reddit.com/r/programming/comments/1su5w1d/while_github_actions_remains_a_key_part_of_this/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/programming/comments/1su5k7i/your_models_know_their_own_schema_let_them_show/">Your Models Know Their Own Schema. Let Them Show You.</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/programming/comments/1su5k7i/your_models_know_their_own_schema_let_them_show/">https://www.reddit.com/r/programming/comments/1su5k7i/your_models_know_their_own_schema_let_them_show/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/programming/comments/1stxuqq/bitwarden_cli_compromised_in_ongoing_checkmarx/">Bitwarden CLI Compromised in Ongoing Checkmarx Supply Chain ...</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/programming/comments/1stxuqq/bitwarden_cli_compromised_in_ongoing_checkmarx/">https://www.reddit.com/r/programming/comments/1stxuqq/bitwarden_cli_compromised_in_ongoing_checkmarx/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/programming/comments/1stq9k6/devirtualization_and_static_polymorphism/">Devirtualization and Static Polymorphism</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/programming/comments/1stq9k6/devirtualization_and_static_polymorphism/">https://www.reddit.com/r/programming/comments/1stq9k6/devirtualization_and_static_polymorphism/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/webdev/comments/1su9i2s/lessons_from_building_a_domainspecific_rag_where/">Lessons from building a domain-specific RAG where hallucinations have real consequences (Islamic finance rulings)</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/webdev/comments/1su9i2s/lessons_from_building_a_domainspecific_rag_where/">https://www.reddit.com/r/webdev/comments/1su9i2s/lessons_from_building_a_domainspecific_rag_where/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/webdev/comments/1su9b7x/handling_multiple_gmail_accounts_and_dashboards/">Handling multiple gmail accounts and dashboards without burnout.</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/webdev/comments/1su9b7x/handling_multiple_gmail_accounts_and_dashboards/">https://www.reddit.com/r/webdev/comments/1su9b7x/handling_multiple_gmail_accounts_and_dashboards/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/webdev/comments/1su9818/need_help_to_move_website_from_lovable_to/">need help to move website from lovable to wordpress</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/webdev/comments/1su9818/need_help_to_move_website_from_lovable_to/">https://www.reddit.com/r/webdev/comments/1su9818/need_help_to_move_website_from_lovable_to/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/webdev/comments/1su8z0d/i_have_learnt_the_basics_of_html_and_css_but_dont/">I have learnt the basics of html and css but don't understand how to build websites how do I start</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/webdev/comments/1su8z0d/i_have_learnt_the_basics_of_html_and_css_but_dont/">https://www.reddit.com/r/webdev/comments/1su8z0d/i_have_learnt_the_basics_of_html_and_css_but_dont/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/webdev/comments/1su8u0g/best_website_builder_for_hobby_projects_ai_tools/">Best website builder for hobby projects? (AI tools welcome)</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.reddit.com/r/webdev/comments/1su8u0g/best_website_builder_for_hobby_projects_ai_tools/">https://www.reddit.com/r/webdev/comments/1su8u0g/best_website_builder_for_hobby_projects_ai_tools/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.infoq.com/articles/orchestrating-agentic-multimodal-ai-pipelines-apache-camel/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering">Article: Orchestrating Agentic and Multimodal AI Pipelines with Apache Camel</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.infoq.com/articles/orchestrating-agentic-multimodal-ai-pipelines-apache-camel/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering">https://www.infoq.com/articles/orchestrating-agentic-multimodal-ai-pipelines-apache-camel/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://go.theregister.com/feed/www.theregister.com/2026/04/23/anthropic_says_it_has_fixed/">Anthropic admits it dumbed down Claude when trying to make it smarter</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://go.theregister.com/feed/www.theregister.com/2026/04/23/anthropic_says_it_has_fixed/">https://go.theregister.com/feed/www.theregister.com/2026/04/23/anthropic_says_it_has_fixed/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://go.theregister.com/feed/www.theregister.com/2026/04/23/claude_opus_47_auc_overzealous/">Claude Opus 4.7 has turned into an overzealous query cop, devs complain</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://go.theregister.com/feed/www.theregister.com/2026/04/23/claude_opus_47_auc_overzealous/">https://go.theregister.com/feed/www.theregister.com/2026/04/23/claude_opus_47_auc_overzealous/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://go.theregister.com/feed/www.theregister.com/2026/04/23/google_cloud_next_interview_ai_stack/">Google explains why its all-in-one AI stack embraces competitors</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://go.theregister.com/feed/www.theregister.com/2026/04/23/google_cloud_next_interview_ai_stack/">https://go.theregister.com/feed/www.theregister.com/2026/04/23/google_cloud_next_interview_ai_stack/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://go.theregister.com/feed/www.theregister.com/2026/04/23/microsoft_gives_your_word_documents/">Microsoft gives your Word documents an AI co-author you didn’t ask for</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://go.theregister.com/feed/www.theregister.com/2026/04/23/microsoft_gives_your_word_documents/">https://go.theregister.com/feed/www.theregister.com/2026/04/23/microsoft_gives_your_word_documents/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://go.theregister.com/feed/www.theregister.com/2026/04/23/datadog_digs_down_into_gpu/">Datadog digs down into GPU efficiency as AI costs soar</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://go.theregister.com/feed/www.theregister.com/2026/04/23/datadog_digs_down_into_gpu/">https://go.theregister.com/feed/www.theregister.com/2026/04/23/datadog_digs_down_into_gpu/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://simonwillison.net/2026/Apr/24/deepseek-v4/#atom-everything">DeepSeek V4 - almost on the frontier, a fraction of the price</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://simonwillison.net/2026/Apr/24/deepseek-v4/#atom-everything">https://simonwillison.net/2026/Apr/24/deepseek-v4/#atom-everything</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://simonwillison.net/2026/Apr/24/milliseconds/#atom-everything">Millisecond Converter</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://simonwillison.net/2026/Apr/24/milliseconds/#atom-everything">https://simonwillison.net/2026/Apr/24/milliseconds/#atom-everything</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://simonwillison.net/2026/Apr/24/weekly/#atom-everything">It's a big one</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://simonwillison.net/2026/Apr/24/weekly/#atom-everything">https://simonwillison.net/2026/Apr/24/weekly/#atom-everything</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://simonwillison.net/2026/Apr/24/honker/#atom-everything">russellromney/honker</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://simonwillison.net/2026/Apr/24/honker/#atom-everything">https://simonwillison.net/2026/Apr/24/honker/#atom-everything</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://simonwillison.net/2026/Apr/24/recent-claude-code-quality-reports/#atom-everything">An update on recent Claude Code quality reports</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://simonwillison.net/2026/Apr/24/recent-claude-code-quality-reports/#atom-everything">https://simonwillison.net/2026/Apr/24/recent-claude-code-quality-reports/#atom-everything</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://openai.com/index/introducing-gpt-5-5">Introducing GPT-5.5</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://openai.com/index/introducing-gpt-5-5">https://openai.com/index/introducing-gpt-5-5</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://openai.com/index/gpt-5-5-system-card">GPT-5.5 System Card</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://openai.com/index/gpt-5-5-system-card">https://openai.com/index/gpt-5-5-system-card</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://openai.com/academy/codex-automations">Automations</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://openai.com/academy/codex-automations">https://openai.com/academy/codex-automations</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://openai.com/academy/top-10-use-cases-codex-for-work">Top 10 uses for Codex at work</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://openai.com/academy/top-10-use-cases-codex-for-work">https://openai.com/academy/top-10-use-cases-codex-for-work</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://openai.com/academy/codex-plugins-and-skills">Plugins and skills</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://openai.com/academy/codex-plugins-and-skills">https://openai.com/academy/codex-plugins-and-skills</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/what-is-a-tpu/">Here’s how our TPUs power increasingly demanding AI workloads.</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/what-is-a-tpu/">https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/what-is-a-tpu/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://devblogs.microsoft.com/blog/langchainjs-for-beginners">LangChain.js for Beginners: A Free Course to Build Agentic AI Apps with JavaScript</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://devblogs.microsoft.com/blog/langchainjs-for-beginners">https://devblogs.microsoft.com/blog/langchainjs-for-beginners</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://aws.amazon.com/blogs/machine-learning/amazon-quick-for-marketing-from-scattered-data-to-strategic-action/">Amazon Quick for marketing: From scattered data to strategic action</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://aws.amazon.com/blogs/machine-learning/amazon-quick-for-marketing-from-scattered-data-to-strategic-action/">https://aws.amazon.com/blogs/machine-learning/amazon-quick-for-marketing-from-scattered-data-to-strategic-action/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://aws.amazon.com/blogs/machine-learning/applying-multimodal-biological-foundation-models-across-therapeutics-and-patient-care/">Applying multimodal biological foundation models across therapeutics and patient care</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://aws.amazon.com/blogs/machine-learning/applying-multimodal-biological-foundation-models-across-therapeutics-and-patient-care/">https://aws.amazon.com/blogs/machine-learning/applying-multimodal-biological-foundation-models-across-therapeutics-and-patient-care/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://github.blog/changelog/2026-04-23-copilot-chat-improvements-for-pull-requests">Copilot Chat improvements for pull requests</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://github.blog/changelog/2026-04-23-copilot-chat-improvements-for-pull-requests">https://github.blog/changelog/2026-04-23-copilot-chat-improvements-for-pull-requests</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://github.blog/changelog/2026-04-23-global-pull-requests-dashboard-moves-to-opt-out-public-preview">Global pull requests dashboard moves to opt-out public preview</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://github.blog/changelog/2026-04-23-global-pull-requests-dashboard-moves-to-opt-out-public-preview">https://github.blog/changelog/2026-04-23-global-pull-requests-dashboard-moves-to-opt-out-public-preview</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://github.blog/changelog/2026-04-23-copilot-cloud-agent-fields-added-to-usage-metrics">Copilot cloud agent fields added to usage metrics</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://github.blog/changelog/2026-04-23-copilot-cloud-agent-fields-added-to-usage-metrics">https://github.blog/changelog/2026-04-23-copilot-cloud-agent-fields-added-to-usage-metrics</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://github.blog/changelog/2026-04-23-dependabot-graphs-for-python">Dependabot-based dependency graphs for Python</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://github.blog/changelog/2026-04-23-dependabot-graphs-for-python">https://github.blog/changelog/2026-04-23-dependabot-graphs-for-python</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://github.blog/changelog/2026-04-23-disable-commit-comments-across-your-organization">Disable commit comments across your organization</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://github.blog/changelog/2026-04-23-disable-commit-comments-across-your-organization">https://github.blog/changelog/2026-04-23-disable-commit-comments-across-your-organization</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.docker.com/blog/trivy-kics-and-the-shape-of-supply-chain-attacks-so-far-in-2026/">Trivy, KICS, and the shape of supply chain attacks so far in 2026</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.docker.com/blog/trivy-kics-and-the-shape-of-supply-chain-attacks-so-far-in-2026/">https://www.docker.com/blog/trivy-kics-and-the-shape-of-supply-chain-attacks-so-far-in-2026/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://developer.nvidia.com/blog/winning-a-kaggle-competition-with-generative-ai-assisted-coding/">Winning a Kaggle Competition with Generative AI–Assisted Coding</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://developer.nvidia.com/blog/winning-a-kaggle-competition-with-generative-ai-assisted-coding/">https://developer.nvidia.com/blog/winning-a-kaggle-competition-with-generative-ai-assisted-coding/</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.databricks.com/blog/databricks-partners-openai-gpt-55">Databricks partners with OpenAI on GPT-5.5</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.databricks.com/blog/databricks-partners-openai-gpt-55">https://www.databricks.com/blog/databricks-partners-openai-gpt-55</a>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.databricks.com/blog/announcing-public-preview-lakeflow-designer">Announcing the Public Preview of Lakeflow Designer</a></h2>
+            <p>No date</p>
+            Content could not be fetched. Read more at: <a href="https://www.databricks.com/blog/announcing-public-preview-lakeflow-designer">https://www.databricks.com/blog/announcing-public-preview-lakeflow-designer</a>
+        </div>
+      </body></html>
