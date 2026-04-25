@@ -1,163 +1,691 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>AI Daily Digest — April 25, 2026</title>
-<style>
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; color: #1a1a1a; line-height: 1.6; }
-  h1 { font-size: 1.6em; border-bottom: 2px solid #2c2c2c; padding-bottom: 8px; }
-  h2 { font-size: 1.2em; margin-top: 28px; color: #2c2c2c; }
-  .subtitle { color: #666; font-size: 0.9em; margin-bottom: 24px; }
-  .item { margin-bottom: 18px; padding: 12px 16px; background: #fafafa; border-left: 3px solid #4a90d9; border-radius: 0 4px 4px 0; }
-  .item a { color: #2563eb; text-decoration: none; }
-  .item a:hover { text-decoration: underline; }
-  .meta { font-size: 0.85em; color: #888; margin-top: 4px; }
-  .source-badge { display: inline-block; font-size: 0.75em; padding: 1px 6px; border-radius: 3px; background: #e8edf2; color: #555; margin-right: 6px; font-weight: 600; }
-  .date-badge { color: #666; font-style: italic; }
-  .summary { background: #f0f7ff; padding: 14px 18px; border-radius: 6px; margin-top: 32px; font-size: 0.9em; }
-  .summary h2 { margin-top: 0; }
-  ul { margin: 8px 0; }
-</style>
-</head>
-<body>
 
-<h1>📰 AI Daily Digest</h1>
-<p class="subtitle">Saturday, April 25, 2026 — items published within the last 24 hours</p>
+      <!DOCTYPE html>
+      <html>
+      <head>
+          <title>AI News Digest</title>
+          <style>
+              body { font-family: sans-serif; margin: 2em; }
+              .item { margin-bottom: 1.5em; padding-bottom: 1.5em; border-bottom: 1px solid #eee; }
+              .item h2 { margin-top: 0; }
+              .item a { color: #0056b3; text-decoration: none; }
+              .item a:hover { text-decoration: underline; }
+          </style>
+      </head>
+      <body>
+          <h1>AI News Digest - Sunday 26 April 2026</h1>
+    
+        <div class="item">
+            <h2><a href="https://victortaelin.github.io/lambench/">Lambda Calculus Benchmark for AI</a></h2>
+            <p>No date</p>
+            <p><p>Article URL: <a href="https://victortaelin.github.io/lambench/">https://victortaelin.github.io/lambench/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47900506">https://news.ycombinator.com/item?id=47900506</a></p>
+<p>Points: 32</p>
+<p># Comments: 11</p></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://blisscast.wordpress.com/2026/04/21/windows-2-gui-wonderland-12a/">Only One Side Will Be the True Successor to MS-DOS – Windows 2.x</a></h2>
+            <p>No date</p>
+            <p><p>Article URL: <a href="https://blisscast.wordpress.com/2026/04/21/windows-2-gui-wonderland-12a/">https://blisscast.wordpress.com/2026/04/21/windows-2-gui-wonderland-12a/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47900451">https://news.ycombinator.com/item?id=47900451</a></p>
+<p>Points: 14</p>
+<p># Comments: 9</p></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://github.com/nakagami/grdpwasm">A web-based RDP client built with Go WebAssembly and grdp</a></h2>
+            <p>No date</p>
+            <p><p>Article URL: <a href="https://github.com/nakagami/grdpwasm">https://github.com/nakagami/grdpwasm</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47900440">https://news.ycombinator.com/item?id=47900440</a></p>
+<p>Points: 26</p>
+<p># Comments: 8</p></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://github.com/MartinGalway/C64_music">Martin Galway's music source files from 1980's Commodore 64 games</a></h2>
+            <p>No date</p>
+            <p><p>Article URL: <a href="https://github.com/MartinGalway/C64_music">https://github.com/MartinGalway/C64_music</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47900398">https://news.ycombinator.com/item?id=47900398</a></p>
+<p>Points: 34</p>
+<p># Comments: 5</p></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://github.com/nex-crm/wuphf">Show HN: A Karpathy-style LLM wiki your agents maintain (Markdown and Git)</a></h2>
+            <p>No date</p>
+            <p><p>I shipped a wiki layer for AI agents that uses markdown + git as the source of truth, with a bleve (BM25) + SQLite index on top. No vector or graph db yet.<p>It runs locally in ~/.wuphf/wiki/ and you can git clone it out if you want to take your knowledge with you.<p>The shape is the one Karpathy has been circling for a while: an LLM-native knowledge substrate that agents both read from and write into, so context compounds across sessions rather than getting re-pasted every morning. Most implementations of that idea land on Postgres, pgvector, Neo4j, Kafka, and a dashboard.<p>I wanted to go back to the basics and see how far markdown + git could go before I added anything heavier.<p>What it does:
+-> Each agent gets a private notebook at agents/{slug}/notebook/.md, plus access to a shared team wiki at team/.<p>-> Draft-to-wiki promotion flow. Notebook entries are reviewed (agent or human) and promoted to the canonical wiki with a back-link. A small state machine drives expiry and auto-archive.<p>-> Per-entity fact log: append-only JSONL at team/entities/{kind}-{slug}.facts.jsonl. A synthesis worker rebuilds the entity brief every N facts. Commits land under a distinct "Pam the Archivist" git identity so provenance is visible in git log.<p>-> [[Wikilinks]] with broken-link detection rendered in red.<p>-> Daily lint cron for contradictions, stale entries, and broken wikilinks.<p>-> /lookup slash command plus an MCP tool for cited retrieval. A heuristic classifier routes short lookups to BM25 and narrative queries to a cited-answer loop.<p>Substrate choices:
+Markdown for durability. The wiki outlives the runtime, and a user can walk away with every byte. Bleve for BM25. SQLite for structured metadata (facts, entities, edges, redirects, and supersedes). No vectors yet. The current benchmark (500 artifacts, 50 queries) clears 85% recall@20 on BM25 alone, which is the internal ship gate. sqlite-vec is the pre-committed fallback if a query class drops below that.<p>Canonical IDs are first-class. Fact IDs are deterministic and include sentence offset. Canonical slugs are assigned once, merged via redirect stubs, and never renamed. A rebuild is logically identical, not byte-identical.<p>Known limits:
+-> Recall tuning is ongoing. 85% on the benchmark is not a universal guarantee.<p>-> Synthesis quality is bounded by agent observation quality. Garbage facts in, garbage briefs out. The lint pass helps. It is not a judgment engine.<p>-> Single-office scope today. No cross-office federation.<p>Demo. 5-minute terminal walkthrough that records five facts, fires synthesis, shells out to the user's LLM CLI, and commits the result under Pam's identity: <a href="https://asciinema.org/a/vUvjJsB5vtUQQ4Eb" rel="nofollow">https://asciinema.org/a/vUvjJsB5vtUQQ4Eb</a><p>Script lives at ./scripts/demo-entity-synthesis.sh.<p>Context. The wiki ships as part of WUPHF, an open source collaborative office for AI agents like Claude Code, Codex, OpenClaw, and local LLMs via OpenCode. MIT, self-hosted, bring-your-own keys. You do not have to use the full office to use the wiki layer. If you already have an agent setup, point WUPHF at it and the wiki attaches.<p>Source: <a href="https://github.com/nex-crm/wuphf" rel="nofollow">https://github.com/nex-crm/wuphf</a><p>Install: npx wuphf@latest<p>Happy to go deep on the substrate tradeoffs, the promotion-flow state machine, the BM25-first retrieval bet, or the canonical-ID stability rules. Also happy to take "why not an Obsidian vault with a plugin" as a fair question.</p>
+<hr>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47899844">https://news.ycombinator.com/item?id=47899844</a></p>
+<p>Points: 130</p>
+<p># Comments: 62</p></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://matterdevices.io/">Matter Devices Blog – Matterdevices.io</a></h2>
+            <p>No date</p>
+            <p><p>Article URL: <a href="https://matterdevices.io/">https://matterdevices.io/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47901605">https://news.ycombinator.com/item?id=47901605</a></p>
+<p>Points: 1</p>
+<p># Comments: 0</p></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.ft.com/content/e83da9f6-f065-46ad-ad21-e677550b7b0c">Goldman Sachs leads record renminbi borrowing by US banks</a></h2>
+            <p>No date</p>
+            <p><p>Article URL: <a href="https://www.ft.com/content/e83da9f6-f065-46ad-ad21-e677550b7b0c">https://www.ft.com/content/e83da9f6-f065-46ad-ad21-e677550b7b0c</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47901593">https://news.ycombinator.com/item?id=47901593</a></p>
+<p>Points: 1</p>
+<p># Comments: 0</p></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://covertactionmagazine.com/2026/04/24/timothy-leary-1960s-acid-guru-may-have-been-among-the-cias-greatest-assets/">Timothy Leary–1960s Acid Guru–May Have Been Among the CIA's Greatest Assets</a></h2>
+            <p>No date</p>
+            <p><p>Article URL: <a href="https://covertactionmagazine.com/2026/04/24/timothy-leary-1960s-acid-guru-may-have-been-among-the-cias-greatest-assets/">https://covertactionmagazine.com/2026/04/24/timothy-leary-1960s-acid-guru-may-have-been-among-the-cias-greatest-assets/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47901588">https://news.ycombinator.com/item?id=47901588</a></p>
+<p>Points: 1</p>
+<p># Comments: 0</p></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://retractionwatch.com/2026/04/15/game-changer-breast-cancer-study-retracted-as-indiana-researcher-out-of-his-post/">"Game-changer" breast cancer study retracted as researcher out of his post</a></h2>
+            <p>No date</p>
+            <p><p>Article URL: <a href="https://retractionwatch.com/2026/04/15/game-changer-breast-cancer-study-retracted-as-indiana-researcher-out-of-his-post/">https://retractionwatch.com/2026/04/15/game-changer-breast-cancer-study-retracted-as-indiana-researcher-out-of-his-post/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47901567">https://news.ycombinator.com/item?id=47901567</a></p>
+<p>Points: 1</p>
+<p># Comments: 0</p></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://everact.app/en">EverAct – blockchain-verified rewards for walking, cycling, sustainable shopping</a></h2>
+            <p>No date</p>
+            <p><p>Article URL: <a href="https://everact.app/en">https://everact.app/en</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47901564">https://news.ycombinator.com/item?id=47901564</a></p>
+<p>Points: 1</p>
+<p># Comments: 1</p></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://ky.fyi/posts/ai-burnout">Do I belong in tech anymore?</a></h2>
+            <p>No date</p>
+            <p><p><a href="https://lobste.rs/s/xgtyyu/do_i_belong_tech_anymore">Comments</a></p></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://chronicbuildfailure.co/how-to-avoid-shipping-your-org-chart-c086effe751c">Avoid Shipping Your Org Chart</a></h2>
+            <p>No date</p>
+            <p><p><a href="https://lobste.rs/s/gikmcc/avoid_shipping_your_org_chart">Comments</a></p></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.theverge.com/podcast/917029/software-brain-ai-backlash-databases-automation">The people do not yearn for automation</a></h2>
+            <p>No date</p>
+            <p><p><a href="https://lobste.rs/s/gp02rx/people_do_not_yearn_for_automation">Comments</a></p></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://workspace.google.com/blog/identity-and-security/gmail-easy-end-to-end-encryption-all-businesses">Gmail: Bringing easy end-to-end encryption to all businesses</a></h2>
+            <p>No date</p>
+            <p><p><a href="https://lobste.rs/s/rd9x6c/gmail_bringing_easy_end_end_encryption">Comments</a></p></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://gleam.run/news/javascript-source-maps/">Gleam gets source maps, 1.16.0</a></h2>
+            <p>No date</p>
+            <p><p><a href="https://lobste.rs/s/ckacgl/gleam_gets_source_maps_1_16_0">Comments</a></p></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/OpenAI/comments/1svcvwi/openai_ceo_sam_altman_apologizes_for_not_flagging/">OpenAI CEO Sam Altman apologizes for not flagging mass shooter to police</a></h2>
+            <p>No date</p>
+            <p>https://www.openai.com/
+        
+      
+     - 
+      
+        https://help.openai.com/ <a href="https://www.reddit.com/r/OpenAI/comments/1svcvwi/openai_ceo_sam_altman_apologizes_for_not_flagging/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/OpenAI/comments/1svccjn/if_you_already_use_gpt_for_everything_what_would/">If you already use GPT for everything, what would make you seriously try something more execution-focused</a></h2>
+            <p>No date</p>
+            <p>Skip to main content <a href="https://www.reddit.com/r/OpenAI/comments/1svccjn/if_you_already_use_gpt_for_everything_what_would/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/OpenAI/comments/1svbua5/i_asked_chatgpt_to_create_a_meme_only_an_ai_would/">I asked ChatGPT to create a meme only an AI would find funny:</a></h2>
+            <p>No date</p>
+            <p>https://www.openai.com/
+        
+      
+     - 
+      
+        https://help.openai.com/ <a href="https://www.reddit.com/r/OpenAI/comments/1svbua5/i_asked_chatgpt_to_create_a_meme_only_an_ai_would/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/OpenAI/comments/1svbh9e/is_gpt55_actually_a_big_step_forward_or_just_a/">Is GPT-5.5 actually a big step forward, or just a better efficiency story?</a></h2>
+            <p>No date</p>
+            <p>Skip to main content
+r/OpenAI
+Sign Up
+Log In
+Expand user menu <a href="https://www.reddit.com/r/OpenAI/comments/1svbh9e/is_gpt55_actually_a_big_step_forward_or_just_a/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/OpenAI/comments/1svav8r/im_so_fed_up_by_the_crazy_long_answers_chatgpt/">I'm so fed up by the crazy long answers ChatGPT gives every time.</a></h2>
+            <p>No date</p>
+            <p>https://www.openai.com/
+        
+      
+     - 
+      
+        https://help.openai.com/ <a href="https://www.reddit.com/r/OpenAI/comments/1svav8r/im_so_fed_up_by_the_crazy_long_answers_chatgpt/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1svchp3/ibm_is_massively_deprecating_older_granite_models/">IBM is massively deprecating older Granite models</a></h2>
+            <p>No date</p>
+            <p>https://x.com/localllamasub <a href="https://www.reddit.com/r/LocalLLaMA/comments/1svchp3/ibm_is_massively_deprecating_older_granite_models/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1svcg2t/deepseek_v4_api_price_reduced_limitedtime/">DeepSeek V4 API price reduced, limited-time discount of 75%.</a></h2>
+            <p>No date</p>
+            <p>https://x.com/localllamasub <a href="https://www.reddit.com/r/LocalLLaMA/comments/1svcg2t/deepseek_v4_api_price_reduced_limitedtime/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1svbmnc/decreased_intelligence_density_in_deepseek_v4_pro/">Decreased Intelligence Density in DeepSeek V4 Pro</a></h2>
+            <p>No date</p>
+            <p>https://x.com/localllamasub <a href="https://www.reddit.com/r/LocalLLaMA/comments/1svbmnc/decreased_intelligence_density_in_deepseek_v4_pro/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1svbln8/what_rag/">What RAG</a></h2>
+            <p>No date</p>
+            <p>https://x.com/localllamasub <a href="https://www.reddit.com/r/LocalLLaMA/comments/1svbln8/what_rag/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/LocalLLaMA/comments/1svaat8/what_do_you_consider_to_be_the_minimum/">What do you consider to be the minimum performance (t/s) for local Agent workflows?</a></h2>
+            <p>No date</p>
+            <p>Skip to main content <a href="https://www.reddit.com/r/LocalLLaMA/comments/1svaat8/what_do_you_consider_to_be_the_minimum/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/MachineLearning/comments/1sv8wnm/uai_2026_rebuttal_d/">UAI 2026 rebuttal [D]</a></h2>
+            <p>No date</p>
+            <p>Skip to main content
+r/MachineLearning
+Get App
+Log In
+Expand user menu <a href="https://www.reddit.com/r/MachineLearning/comments/1sv8wnm/uai_2026_rebuttal_d/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/MachineLearning/comments/1sv3cnm/how_would_you_build_an_automated_commentary/">How would you build an automated commentary engine for daily trade attribution at scale? [R]</a></h2>
+            <p>No date</p>
+            <p>Go to MachineLearning
+r/MachineLearning
+•
+9h ago
+Problemsolver_11
+How would you build an automated commentary engine for daily trade attribution at scale. [R]
+Research
 
-<h2>🔥 Top Stories</h2>
+Hey everyone,
 
-<div class="item">
-  <p><strong><a href="https://github.blog/changelog/2026-04-24-gpt-5-5-is-generally-available-for-github-copilot/">GPT-5.5 Goes GA on GitHub Copilot</a></strong></p>
-  <p>OpenAI's GPT-5.5 is rolling out across all GitHub Copilot IDEs (VS Code, VS, JetBrains, Xcode, Eclipse, mobile, CLI, and web). It shows strongest performance on complex multi-step agentic coding tasks. Copilot Pro+, Business, and Enterprise users can select it in the model picker. Launch pricing includes a 7.5× premium request multiplier. Enterprise/Business admins must enable the policy.</p>
-  <p class="meta"><span class="source-badge">GitHub</span> <span class="date-badge">Apr 24, 2026</span></p>
-</div>
+I'm currently working through a problem in the market risk reporting space and would love to hear how you all would architect this. The Use Case: > I have thousands of trades coming in at varying frequencies (daily, monthly)... <a href="https://www.reddit.com/r/MachineLearning/comments/1sv3cnm/how_would_you_build_an_automated_commentary/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/MachineLearning/comments/1sv1473/how_to_find_to_collaborate_with_professors_to_get/">How to find to 'collaborate' with Professors to get funding for my research papers? [D]</a></h2>
+            <p>No date</p>
+            <p>Go to MachineLearning
+r/MachineLearning
+•
+11h ago
+Erika_bomber
+ Top 1% Commenter
+How to find to 'collaborate' with Professors to get funding for my research papers. [D]
+Discussion
 
-<div class="item">
-  <p><strong><a href="https://github.blog/changelog/2026-04-24-inline-agent-mode-in-preview-and-more-in-github-copilot-for-jetbrains-ides/">GitHub Copilot for JetBrains: Inline Agent Mode in Preview</a></strong></p>
-  <p>GitHub Copilot for JetBrains IDEs introduces inline agent mode (public preview), Next Edit Suggestions with inline edit previews and far-away edit support, global auto-approve, and more flexible controls for terminal commands and file edits.</p>
-  <p class="meta"><span class="source-badge">GitHub</span> <span class="date-badge">Apr 24, 2026</span></p>
-</div>
+So, I have a few research papers, which I feel are good enough for top conferences' workshops or adjacent proceedings, and maybe even the main conference itself. I recently, submitted to and got accepted at a CVPR Archival Workshop (which is considered to be great in it's niche), but was forced to withdraw as I lacked the money to do the Author Registration as the lone author... <a href="https://www.reddit.com/r/MachineLearning/comments/1sv1473/how_to_find_to_collaborate_with_professors_to_get/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/MachineLearning/comments/1suzqxe/opensource_9task_benchmark_for_codingagent/">Open-source 9-task benchmark for coding-agent retrieval augmentation. Per-task deltas +0.010 to +0.320, all evals reproducible [P]</a></h2>
+            <p>No date</p>
+            <p>Go to MachineLearning
+r/MachineLearning
+•
+12h ago
+kalpitdixit
+Open-source 9-task benchmark for coding-agent retrieval augmentation. Per-task deltas +0.010 to +0.320, all evals reproducible [P]
+Project
 
-<div class="item">
-  <p><strong><a href="https://www.theregister.com/2026/04/24/deepseek_v4/">DeepSeek V4: Open-Weight Models Optimized for Huawei NPUs</a></strong></p>
-  <p>DeepSeek unveiled V4 in two flavours — a 1.6T-parameter V4-Pro (49B active) and a 284B/13B Flash MoE model. V4-Pro was trained on 33T tokens and claims to beat every open-weight LLM while rivaling top proprietary models. Notable: V4 adds support for Huawei Ascend accelerators, and NVIDIA published a guide on running V4 on Blackwell GPU endpoints.</p>
-  <p class="meta"><span class="source-badge">The Register</span> <span class="date-badge">Apr 24, 2026</span></p>
-</div>
+Sharing an open-source benchmark suite (paper-lantern-challenges) that measures coding-agent performance with vs without retrieval-augmented technique selection across 9 everyday software tasks. Disclosure: I'm the author of the retrieval system under test (paperlantern.ai/code); the artifact being shared here is the benchmark suite itself, not the product... <a href="https://www.reddit.com/r/MachineLearning/comments/1suzqxe/opensource_9task_benchmark_for_codingagent/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/MachineLearning/comments/1sun6wt/dharmaocr_opensource_specialized_slm_3b/">DharmaOCR: Open-Source Specialized SLM (3B) + Cost–Performance Benchmark against LLMs and other open-sourced models [R]</a></h2>
+            <p>No date</p>
+            <p>Go to MachineLearning
+r/MachineLearning
+•
+20h ago
+augusto_camargo3
+DharmaOCR: Open-Source Specialized SLM (3B) + Cost–Performance Benchmark against LLMs and other open-sourced models [R]
+Research
 
-<div class="item">
-  <p><strong><a href="https://mimo.xiaomi.com/mimo-v2-5-pro">Xiaomi MiMo-V2.5-Pro: 1T Parameter Agentic Model Enters Public Beta</a></strong></p>
-  <p>Xiaomi released MiMo-V2.5-Pro (1T total / 42B active parameters, MoE) as its most capable model. Demonstrated building a full SysY compiler in Rust (672 tool calls, 4.3 hrs, 233/233 tests). Supports 1M context window, available via API and AI Studio. Released Apr 22.</p>
-  <p class="meta"><span class="source-badge">Xiaomi</span> <span class="date-badge">Apr 22, 2026 (discovered Apr 24)</span></p>
-</div>
+Hey everyone, we just open-sourced DharmaOCR on Hugging Face. Models and datasets are all public, free to use and experiment with. We also published the paper documenting all the experimentation behind it, for those who want to dig into the methodology... <a href="https://www.reddit.com/r/MachineLearning/comments/1sun6wt/dharmaocr_opensource_specialized_slm_3b/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/singularity/comments/1svcpwv/eat_organic/">Eat organic</a></h2>
+            <p>No date</p>
+            <p>Go to singularity
+r/singularity
+•
+19m ago
+Creamy-Sundae-9991
+Eat organic
+AI
 
-<div class="item">
-  <p><strong><a href="https://www.theregister.com/2026/04/24/meta_aws_cpu/">Meta Signs Multi-Year Deal for Tens of Millions of AWS Graviton 5 Cores</a></strong></p>
-  <p>Meta is deploying AWS Graviton 5 (192 Arm Neoverse V3 cores, DDR5 8800 MT/s) to support agentic AI deployments. Aims to diversify compute fleet alongside Nvidia Grace CPUs and Arm's branded AGI CPU. Graviton 5 delivers a 25% uplift vs Gen 4.</p>
-  <p class="meta"><span class="source-badge">The Register</span> <span class="date-badge">Apr 24, 2026</span></p>
-</div>
+https://www.reddit.com/r/SacredGeometry/s/Kq925y8pzM
 
-<div class="item">
-  <p><strong><a href="https://www.theregister.com/2026/04/24/intel_expects_ai_inference_to/">Intel Bets on AI Inference to Restore CPU Relevance</a></strong></p>
-  <p>CEO Lip-Bu Tan told analysts AI inference and "physical AI" (edge/robot agents) will be "a much bigger market." Q1 revenue beat at $13.6B (AI-driven lines up 40% YoY at 60% of total). Intel 14A process design commitments expected H2 2026.</p>
-  <p class="meta"><span class="source-badge">The Register</span> <span class="date-badge">Apr 24, 2026</span></p>
-</div>
+https://www.reddit.com/r/ThroughTheVeil/s/kLCLYOKSfk
 
-<h2>🛠️ Developer Tools & Infrastructure</h2>
+https://www.reddit.com/r/InterdimensionalNHI/s/aMeEUUTpet <a href="https://www.reddit.com/r/singularity/comments/1svcpwv/eat_organic/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/singularity/comments/1svbtfg/agi_the_architecture_of_goodness_and_intelligence/">AGI: the Architecture of Goodness and Intelligence</a></h2>
+            <p>No date</p>
+            <p>Go to singularity
+r/singularity
+•
+57m ago
+Most_Echidna1477
+AGI: the Architecture of Goodness and Intelligence
+AI
 
-<div class="item">
-  <p><strong><a href="https://github.blog/changelog/2026-04-24-notice-about-upcoming-new-format-for-github-app-installation-tokens/">GitHub App Token Format Changes Coming April 27</a></strong></p>
-  <p>GitHub is rolling out a new format for App installation tokens for better performance. Staged rollout begins Apr 27. Tools consuming tokens will need updating.</p>
-  <p class="meta"><span class="source-badge">GitHub</span> <span class="date-badge">Apr 24, 2026</span></p>
-</div>
+I am honestly really tired of the constant "Skynet will nuke us" or "Paperclip maximizer will turn us into dust" media movement. Many do not seem to understand that we are constantly projecting the neurotic, tribal anxieties of a hairless ape onto a multidimensional vector space where these biological rules simply do not apply. Evil acts are always a separation of parts into dichotomies, ignoring complexities... <a href="https://www.reddit.com/r/singularity/comments/1svbtfg/agi_the_architecture_of_goodness_and_intelligence/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/singularity/comments/1svbj0u/found_online_suspiciously_precise_floats_or_how_i/">Found online: "Suspiciously precise floats, or, how I got Claude's real limits"</a></h2>
+            <p>No date</p>
+            <p>Go to singularity
+r/singularity
+•
+1h ago
+pier4r
+Found online: "Suspiciously precise floats, or, how I got Claude's real limits"
+AI
+she-llac.com
+Open
+Share <a href="https://www.reddit.com/r/singularity/comments/1svbj0u/found_online_suspiciously_precise_floats_or_how_i/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/singularity/comments/1svb3mt/why_do_we_refer_to_modern_generative_tech_as_ai/">Why do we refer to modern generative tech as “AI”?</a></h2>
+            <p>No date</p>
+            <p>Go to singularity
+r/singularity
+•
+1h ago
+Grand_Requirement_71
+Why do we refer to modern generative tech as “AI”. AI
 
-<div class="item">
-  <p><strong><a href="https://www.databricks.com/blog/openai-gpt-55-now-available-databricks-fully-governed-through-unity-ai-gateway">GPT-5.5 Now Available on Databricks via Unity AI Gateway</a></strong></p>
-  <p>Databricks announced GPT-5.5 availability on its platform with full governance through the Unity AI Gateway, positioning it for enterprise agentic workloads.</p>
-  <p class="meta"><span class="source-badge">Databricks</span> <span class="date-badge">Apr 24, 2026</span></p>
-</div>
+I remember when things like automation tools and even computer controlled enemies in video games were already being called “AI,” so I’m curious how the term ended up being used for today’s generative tools as well. <a href="https://www.reddit.com/r/singularity/comments/1svb3mt/why_do_we_refer_to_modern_generative_tech_as_ai/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/singularity/comments/1svasld/memory_systems_with_vector_objects_as/">Memory systems with vector objects as relationships instead of strict labels</a></h2>
+            <p>No date</p>
+            <p>Skip to main content
+r/singularity
+Get App
+Log In
+Expand user menu <a href="https://www.reddit.com/r/singularity/comments/1svasld/memory_systems_with_vector_objects_as/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/programming/comments/1svcfmv/understanding_the_proxy_design_pattern_in_go_a/">Understanding the Proxy Design Pattern in Go: A Practical Guide</a></h2>
+            <p>No date</p>
+            <p>Go to programming
+r/programming
+•
+31m ago
+priyankchheda15
+Understanding the Proxy Design Pattern in Go: A Practical Guide
+medium.com
+Open
 
-<div class="item">
-  <p><strong><a href="https://aws.amazon.com/blogs/machine-learning/building-workforce-ai-agents-with-visier-and-amazon-quick/">Building Workforce AI Agents with Visier and Amazon Quick (MCP)</a></strong></p>
-  <p>AWS blog post showing how Model Context Protocol connects Visier's workforce data platform with Amazon Quick, giving knowledge workers a unified agentic workspace.</p>
-  <p class="meta"><span class="source-badge">AWS</span> <span class="date-badge">Apr 24, 2026</span></p>
-</div>
+Hey folks 👋
 
-<div class="item">
-  <p><strong><a href="https://gleam.run/news/javascript-source-maps/">Gleam 1.16.0: JavaScript Source Maps</a></strong></p>
-  <p>The Gleam language released 1.16.0 with JavaScript source map support, improving debugging of Gleam→JS compiled output.</p>
-  <p class="meta"><span class="source-badge">Gleam</span> <span class="date-badge">Apr 24, 2026</span></p>
-</div>
+I recently wrote a short, practical guide on the Proxy Design Pattern in Go. Most pattern articles feel either too abstract or too Java-heavy, so I tried to keep this one simple and Go-friendly:
 
-<div class="item">
-  <p><strong><a href="https://simonwillison.net/2026/Apr/24/llm/">llm 0.31 Released</a></strong></p>
-  <p>Simon Willison's CLI tool for interacting with LLMs (llm) got a 0.31 release.</p>
-  <p class="meta"><span class="source-badge">Simon Willison</span> <span class="date-badge">Apr 24, 2026</span></p>
-</div>
+what proxy actually means (basically a middle layer controlling access)
 
-<div class="item">
-  <p><strong><a href="https://github.blog/changelog/2026-04-24-changes-to-notification-retention-and-archived-repository-watches/">GitHub Notification Retention & Archived Repo Watches Changes</a></strong></p>
-  <p>GitHub is updating notification retention policies and how archived repository watches are handled. Rolling out over next few months.</p>
-  <p class="meta"><span class="source-badge">GitHub</span> <span class="date-badge">Apr 24, 2026</span></p>
-</div>
+a clean Go example with interface + real object + proxy
 
-<h2>📊 Research & Open Source</h2>
+a practical use case (lazy initialization + adding logic before delegation)
 
-<div class="item">
-  <p><strong><a href="https://gdm-tipsv2.github.io/">TIPSv2: Vision-Language Pretraining with Enhanced Patch-Text Alignment</a></strong></p>
-  <p>A new vision-language pretraining approach (TIPSv2) focusing on better alignment between image patches and text tokens.</p>
-  <p class="meta"><span class="source-badge">Hacker News</span> <span class="date-badge">Apr 24, 2026</span></p>
-</div>
+Nothing fancy—just enough to understand when and why you’d use it. If you’ve ever:
 
-<div class="item">
-  <p><strong><a href="https://arxiv.org/abs/2604.21428">Decoupled DiLoCo for Resilient Distributed Pre-Training</a></strong></p>
-  <p>New arXiv paper on decentralized distributed pre-training using decoupled DoRA-style LoRA coordination, improving fault tolerance in federated training.</p>
-  <p class="meta"><span class="source-badge">arXiv / HN</span> <span class="date-badge">Apr 25, 2026</span></p>
-</div>
+added logging before calling a service
 
-<div class="item">
-  <p><strong><a href="https://www.reddit.com/r/MachineLearning/comments/1sun6wt/dharmaocr_opensource_specialized_slm_3b/">DharmaOCR: Open-Source Specialized SLM (3B) for OCR</a></strong></p>
-  <p>3B-parameter specialized small language model for OCR tasks with cost-performance benchmarks against larger LLMs and other open-source models.</p>
-  <p class="meta"><span class="source-badge">Reddit ML</span> <span class="date-badge">Apr 24, 2026</span></p>
-</div>
+put access control in front of something
 
-<div class="item">
-  <p><strong><a href="https://www.reddit.com/r/MachineLearning/comments/1sui6je/were_opensourcing_the_first_publicly_available/">First Public Blood Detection Model: Dataset + Weights + CLI</a></strong></p>
-  <p>Open-source blood detection model with dataset, weights, and command-line interface for medical imaging.</p>
-  <p class="meta"><span class="source-badge">Reddit ML</span> <span class="date-badge">Apr 24, 2026</span></p>
-</div>
+delayed creation of an expensive object
 
-<div class="item">
-  <p><strong><a href="https://github.com/TheGuyWithoutH/mac-computer-use">Mac-use: Open-Source Codex Computer-Use Clone for macOS</a></strong></p>
-  <p>Cross-platform computer-use agent (Codex-like) using Hermes Agent + Qwen3.6-35B-A3B-4bit + Cua-Driver for multi-cursor/background automation.</p>
-  <p class="meta"><span class="source-badge">GitHub / HN</span> <span class="date-badge">Apr 24, 2026</span></p>
-</div>
+…you’ve probably used a proxy without calling it that... <a href="https://www.reddit.com/r/programming/comments/1svcfmv/understanding_the_proxy_design_pattern_in_go_a/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/programming/comments/1svbg53/immediate_mode_ui_to_the_rescue/">Immediate mode UI to the rescue</a></h2>
+            <p>No date</p>
+            <p>Go to programming
+r/programming
+•
+1h ago
+zagortenay333
+Immediate mode UI to the rescue
+dgtlgrove.com
+Open
 
-<div class="item">
-  <p><strong><a href="https://developer.nvidia.com/blog/federated-learning-without-the-refactoring-overhead-using-nvidia-flare/">Federated Learning Without Refactoring Using NVIDIA FLARE</a></strong></p>
-  <p>NVIDIA blog post on reducing refactoring overhead in federated learning pipelines with NVIDIA FLARE framework.</p>
-  <p class="meta"><span class="source-badge">NVIDIA</span> <span class="date-badge">Apr 24, 2026</span></p>
-</div>
+I wanna give a shout out to the awesome UI series by Ryan Fleury (RAD Game tools). The series goes into details on how to build an immediate-mode UI
 
-<h2>🌐 Industry</h2>
+from first principles. I believe Casey Muratori (who coined the term immediate-mode UI) calls
 
-<div class="item">
-  <p><strong><a href="https://www.theregister.com/2026/04/24/open_telemetry_founder_tools_up/">OpenTelemetry Founder Tools Up for Project Graduation Party</a></strong></p>
-  <p>The founder of OpenTelemetry is building new tools as the project nears graduation from CNCF.</p>
-  <p class="meta"><span class="source-badge">The Register</span> <span class="date-badge">Apr 24, 2026</span></p>
-</div>
+the type of UI outlined here a pimmui (partial immediate mode) because
 
-<div class="item">
-  <p><strong><a href="https://www.reddit.com/r/singularity/comments/1suwieo/gpt55s_simpebench_scores_are_out/">GPT-5.5 SimpleBench Scores Released</a></strong></p>
-  <p>Community benchmark results for GPT-5.5 on SimpleBench, with discussion on performance vs. expectations.</p>
-  <p class="meta"><span class="source-badge">Reddit /r/singularity</span> <span class="date-badge">Apr 25, 2026</span></p>
-</div>
+one actually builds a widget tree... <a href="https://www.reddit.com/r/programming/comments/1svbg53/immediate_mode_ui_to_the_rescue/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/programming/comments/1svb7tw/a_field_guide_to_bugs/">A Field Guide to bugs</a></h2>
+            <p>No date</p>
+            <p>Go to programming
+r/programming
+•
+1h ago
+arj-co
+A Field Guide to bugs
+stephendiehl.com
+Open
+Share <a href="https://www.reddit.com/r/programming/comments/1svb7tw/a_field_guide_to_bugs/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/programming/comments/1sv936h/what_net_ai_agentic_dev_looks_like_in_2026/">What .NET + AI agentic dev looks like in 2026</a></h2>
+            <p>No date</p>
+            <p>Go to programming
+r/programming
+•
+3h ago
+kristijankralj
+What .NET + AI agentic dev looks like in 2026
+thearchitecturelab.com
+Open <a href="https://www.reddit.com/r/programming/comments/1sv936h/what_net_ai_agentic_dev_looks_like_in_2026/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/programming/comments/1sv914z/how_to_become_a_better_unity_c_programmer/">How to become a better Unity C# Programmer</a></h2>
+            <p>No date</p>
+            <p>Go to programming
+r/programming
+•
+3h ago
+KwonDarko
+How to become a better Unity C# Programmer
+darkounity.com
+Open
+Share <a href="https://www.reddit.com/r/programming/comments/1sv914z/how_to_become_a_better_unity_c_programmer/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/webdev/comments/1svd23n/built_a_chrome_extension_to_test_responsive/">Built a Chrome extension to test responsive layouts faster</a></h2>
+            <p>No date</p>
+            <p>Go to webdev
+r/webdev
+•
+6m ago
+ihatethatcow
+Built a Chrome extension to test responsive layouts faster
 
-<div class="summary">
-  <h2>📊 Source Coverage</h2>
-  <p><strong>32 sources checked</strong> across Hacker News, Reddit (4 subreddits), Lobsters, The Register, GitHub Changelog, vendor blogs (OpenAI, Google, AWS, Databricks, NVIDIA, Meta, Microsoft Azure), developer blogs (Simon Willison, Gleam), and research feeds.</p>
-  <p><strong>Notable newly discovered sources this run:</strong> Xiaomi MiMo platform (mimo.xiaomi.com), AIToolly, NeuralBuddies, AI Flash Report, The AI Track, AidailyPost.</p>
-  <p><strong>Items included:</strong> 17 items from the last-24-hour window. Several Xiaomi MiMo-V2.5-Pro articles were discovered on Apr 24 despite the model releasing Apr 22 (still within discovery window and relevant to ongoing coverage).</p>
-</div>
+Hey everyone, I built a Chrome extension called Responsive Lab that helps quickly test websites across different screen sizes without manually resizing the browser. I made this because switching between dimensions during frontend testing was taking too much time. Here is a screenshot of how it works... <a href="https://www.reddit.com/r/webdev/comments/1svd23n/built_a_chrome_extension_to_test_responsive/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/webdev/comments/1svd1bj/showoff_saturday_built_a_playliststyle_read_aloud/">[Showoff Saturday] Built a playlist-style read aloud library into my Chrome extension</a></h2>
+            <p>No date</p>
+            <p>Go to webdev
+r/webdev
+•
+7m ago
+siegerts
+[Showoff Saturday] Built a playlist-style read aloud library into my Chrome extension
+Showoff Saturday
 
-</body>
-</html>
+Hi All - I’ve been building Readox, a Chrome extension for turning written content into something you can listen to instead of reading on screen. The part I’m focused on now is the library / playlist experience. Instead of just hitting play on one page, you can save articles, PDFs, Google Docs, selected text, and summaries into a library, organize them into collections, and play through them more like a queue or playlist... <a href="https://www.reddit.com/r/webdev/comments/1svd1bj/showoff_saturday_built_a_playliststyle_read_aloud/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/webdev/comments/1svchll/anyone_here_used_inkdes_email_studio_having/">Anyone here used InkDes Email Studio? Having rendering issues after export</a></h2>
+            <p>No date</p>
+            <p>Go to webdev
+r/webdev
+•
+29m ago
+WarmHeight2951
+Anyone here used InkDes Email Studio. Having rendering issues after export
+
+Hey, I’ve recently started using InkDes Email Studio to build HTML email templates using their React-style components. Everything looks fine while I’m building the template, but after exporting it to HTML and sending it, the email doesn’t render properly... <a href="https://www.reddit.com/r/webdev/comments/1svchll/anyone_here_used_inkdes_email_studio_having/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/webdev/comments/1svc8nw/i_made_an_app_to_create_custom_maps_using_ai/">I made an app to create custom maps using ai prompts!</a></h2>
+            <p>No date</p>
+            <p>Go to webdev
+r/webdev
+•
+40m ago
+Witty_Buy513
+I made an app to create custom maps using ai prompts. Showoff Saturday
+
+Happy to hear any feedback custommaps.io
+
+Share
+anthropic-ai
+•
+Promoted
+What does your team's deploy frequency look like. Claude-using teams on Vercel are shipping 7.6x more often than those without it... <a href="https://www.reddit.com/r/webdev/comments/1svc8nw/i_made_an_app_to_create_custom_maps_using_ai/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.reddit.com/r/webdev/comments/1svc8lt/finding_the_sweet_spot_for_selfhosting_without/">Finding the sweet spot for self-hosting without the сloud giant overhead?</a></h2>
+            <p>No date</p>
+            <p>Go to webdev
+r/webdev
+•
+40m ago
+ivyhoro
+Finding the sweet spot for self-hosting without the сloud giant overhead. Discussion
+
+I’ve been diving deep into self-hosting my dev environments lately to move away from the rising costs of Her͏oku and Ver͏cel. I recently settled on Coo͏lify (which is ama͏zing, btw), but I hit a wall when it came to choosing the right VPS provider... <a href="https://www.reddit.com/r/webdev/comments/1svc8lt/finding_the_sweet_spot_for_selfhosting_without/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://go.theregister.com/feed/www.theregister.com/2026/04/25/ai_enterprise_matt_domo/">Ex-AWS legend explains what enterprises need to make AI actually work</a></h2>
+            <p>No date</p>
+            <p>AI + ML
+Ex-AWS legend explains what enterprises need to make AI actually work
+AI transformation is about people and organization, not technology
+Thomas Claburn
+Sat 25 Apr 2026 // 13:07 UTC
+
+Enterprise AI projects go off the rails when companies focus on the technology instead of the people. So says Matt Domo, co-founder of AWS's database division, founder of AI consultancy FifthVantage, and also author of a tome titled “Everybody Wins”. "The number one reason these fail is because the business and leadership, and how work gets done and decisions get made, don't change in kind for the new way things are done," Domo said in an interview with The Register... <a href="https://go.theregister.com/feed/www.theregister.com/2026/04/25/ai_enterprise_matt_domo/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://go.theregister.com/feed/www.theregister.com/2026/04/24/deepseek_v4/">DeepSeek's new models are so efficient they'll run on a toaster ... by which we mean Huawei's NPUs</a></h2>
+            <p>No date</p>
+            <p>AI + ML
+DeepSeek's new models are so efficient they'll run on a toaster ... by which we mean Huawei's NPUs
+18 
+Now available in preview, DeepSeek V4 cuts inference costs to a fraction of R1
+Tobias Mann
+Fri 24 Apr 2026 // 21:25 UTC
+
+Chinese AI darling DeepSeek is back with a new open weights large language model that promises performance to rival the best proprietary American LLMs. Perhaps more importantly, it claims to dramatically reduce inference costs and it extends support for Huawei's Ascend family of AI accelerators... <a href="https://go.theregister.com/feed/www.theregister.com/2026/04/24/deepseek_v4/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://simonwillison.net/2026/Apr/25/romain-huet/#atom-everything">Quoting Romain Huet</a></h2>
+            <p>No date</p>
+            <p>Simon Willison’s Weblog
+Subscribe
+Sponsored by: Sonar — Now with SAST + SCA for secure, dependency-aware Agentic Engineering. SonarQube Advanced Security
+
+Since GPT-5.4, we’ve unified Codex and the main model into a single system, so there’s no separate coding line anymore. GPT-5.5 takes this further, with strong gains in agentic coding, computer use, and any task on a computer... <a href="https://simonwillison.net/2026/Apr/25/romain-huet/#atom-everything">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://simonwillison.net/2026/Apr/25/gpt-5-5-prompting-guide/#atom-everything">GPT-5.5 prompting guide</a></h2>
+            <p>No date</p>
+            <p>Simon Willison’s Weblog
+Subscribe
+Sponsored by: Sonar — Now with SAST + SCA for secure, dependency-aware Agentic Engineering. SonarQube Advanced Security
+
+GPT-5.5 prompting guide. Now that GPT-5.5 is available in the API, OpenAI have released a wealth of useful tips on how best to prompt the new model... <a href="https://simonwillison.net/2026/Apr/25/gpt-5-5-prompting-guide/#atom-everything">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://simonwillison.net/2026/Apr/24/llm/#atom-everything">llm 0.31</a></h2>
+            <p>No date</p>
+            <p>Simon Willison’s Weblog
+Subscribe
+Sponsored by: Sonar — Now with SAST + SCA for secure, dependency-aware Agentic Engineering. SonarQube Advanced Security
+RELEASE llm 0.31 — Access large language models from the command-line
+New GPT-5.5 OpenAI model: llm -m gpt-5.5. #1418
+New option to set the text verbosity level for GPT-5+ OpenAI models: -o verbosity low... <a href="https://simonwillison.net/2026/Apr/24/llm/#atom-everything">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://simonwillison.net/2026/Apr/24/the-people-do-not-yearn-for-automation/#atom-everything">The people do not yearn for automation</a></h2>
+            <p>No date</p>
+            <p>Simon Willison’s Weblog
+Subscribe
+Sponsored by: Sonar — Now with SAST + SCA for secure, dependency-aware Agentic Engineering. SonarQube Advanced Security
+
+The people do not yearn for automation (via) This written and video essay by Nilay Patel explores why AI is unpopular with the general public even as usage numbers for ChatGPT continue to skyrocket. It’s a superb piece of commentary, and something I expect I’ll be thinking about for a long time to come... <a href="https://simonwillison.net/2026/Apr/24/the-people-do-not-yearn-for-automation/#atom-everything">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://blog.google/products-and-platforms/products/gemini/gemini-spring-cleaning-tips/">8 Gemini tips for organizing your space (and life)</a></h2>
+            <p>No date</p>
+            <p><img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Spring_Cleaning_hero.max-600x600.format-webp.webp">Organize your home and digital space with Gemini. Use AI-powered tips for cleaning schedules, inbox decluttering, seasonal chores.</p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://aws.amazon.com/blogs/machine-learning/building-workforce-ai-agents-with-visier-and-amazon-quick/">Building Workforce AI Agents with Visier and Amazon Quick</a></h2>
+            <p>No date</p>
+            <p>In this post, we show how connecting the Visier Workforce AI platform with Amazon Quick through Model Context Protocol (MCP) gives every knowledge worker a unified agentic workspace to ask questions in. Visier helps ground the workspace in live workforce data and the organizational context that surrounds it while letting your users act on the conversational results without switching tools.</p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://github.blog/changelog/2026-04-24-notice-about-upcoming-new-format-for-github-app-installation-tokens">Notice about upcoming new format for GitHub App installation tokens</a></h2>
+            <p>No date</p>
+            <p><p>Starting April 27th 2026 and over the coming weeks, we will begin a staged rollout that updates the format of newly minted GitHub App installation tokens, making them more performant&#8230;</p>
+<p>The post <a href="https://github.blog/changelog/2026-04-24-notice-about-upcoming-new-format-for-github-app-installation-tokens">Notice about upcoming new format for GitHub App installation tokens</a> appeared first on <a href="https://github.blog">The GitHub Blog</a>.</p></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://github.blog/changelog/2026-04-24-changes-to-notification-retention-and-archived-repository-watches">Changes to notification retention and archived repository watches</a></h2>
+            <p>No date</p>
+            <p><p>Two updates will change the way GitHub notifications and repository watches are retained. These updates are rolling out soon, and are expected to be completed over the next few months.&#8230;</p>
+<p>The post <a href="https://github.blog/changelog/2026-04-24-changes-to-notification-retention-and-archived-repository-watches">Changes to notification retention and archived repository watches</a> appeared first on <a href="https://github.blog">The GitHub Blog</a>.</p></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://github.blog/changelog/2026-04-24-gpt-5-5-is-generally-available-for-github-copilot">GPT-5.5 is generally available for GitHub Copilot</a></h2>
+            <p>No date</p>
+            <p><p>GPT-5.5, OpenAI&#8217;s latest GPT model, is now rolling out on GitHub Copilot. In our early testing, GPT-5.5 delivers its strongest performance on complex, multi-step agentic coding task and resolves real-world&#8230;</p>
+<p>The post <a href="https://github.blog/changelog/2026-04-24-gpt-5-5-is-generally-available-for-github-copilot">GPT-5.5 is generally available for GitHub Copilot</a> appeared first on <a href="https://github.blog">The GitHub Blog</a>.</p></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://github.blog/changelog/2026-04-24-inline-agent-mode-in-preview-and-more-in-github-copilot-for-jetbrains-ides">Inline agent mode in preview and more in GitHub Copilot for JetBrains IDEs</a></h2>
+            <p>No date</p>
+            <p><p>This update introduces inline agent mode in preview, enhancements to Next Edit Suggestions, global auto approve, and more flexible controls for terminal commands and file edits. It also includes several&#8230;</p>
+<p>The post <a href="https://github.blog/changelog/2026-04-24-inline-agent-mode-in-preview-and-more-in-github-copilot-for-jetbrains-ides">Inline agent mode in preview and more in GitHub Copilot for JetBrains IDEs</a> appeared first on <a href="https://github.blog">The GitHub Blog</a>.</p></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://developer.nvidia.com/blog/build-with-deepseek-v4-using-nvidia-blackwell-and-gpu-accelerated-endpoints/">Build with DeepSeek V4 Using NVIDIA Blackwell and GPU-Accelerated Endpoints</a></h2>
+            <p>No date</p>
+            <p>DEVELOPER
+Home
+Blog
+Forums
+Docs
+Downloads
+Training
+Join
+Technical Blog
+Subscribe
+Agentic AI / Generative AI
+Build with DeepSeek V4 Using NVIDIA Blackwell and GPU-Accelerated Endpoints
+Apr 24, 2026
+By Anu Srivastava and Eduardo Alvarez
++14
+Like
+ Discuss (0)
+
+DeepSeek just launched its fourth generation of flagship models with DeepSeek-V4-Pro and DeepSeek-V4-Flash, both targeted at enabling highly efficient million-token context inference. DeepSeek-V4-Pro is the largest model in the family, with 1.6T total parameters and 49B active parameters. DeepSeek-V4-Flash is a smaller 284B-parameter model with 13B active parameters, designed for higher-speed, higher-efficiency workloads... <a href="https://developer.nvidia.com/blog/build-with-deepseek-v4-using-nvidia-blackwell-and-gpu-accelerated-endpoints/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://developer.nvidia.com/blog/federated-learning-without-the-refactoring-overhead-using-nvidia-flare/">Federated Learning Without the Refactoring Overhead Using NVIDIA FLARE</a></h2>
+            <p>No date</p>
+            <p>DEVELOPER
+Home
+Blog
+Forums
+Docs
+Downloads
+Training
+Join
+Technical Blog
+Subscribe
+Data Science
+Federated Learning Without the Refactoring Overhead Using NVIDIA FLARE
+Apr 24, 2026
+By Holger Roth, Yuan-Ting Hsieh, Ziyue Xu and Yan Cheng
++3
+Like
+ Discuss (0)
+
+Federated learning (FL) is no longer a research curiosity—it’s a practical response to a hard constraint: the most valuable data is often the least movable. Regulatory boundaries, data sovereignty rules, and organizational risk tolerance routinely prevent centralized aggregation. Meanwhile, sheer data gravity makes even permitted transfers slow, expensive, and fragile at scale... <a href="https://developer.nvidia.com/blog/federated-learning-without-the-refactoring-overhead-using-nvidia-flare/">Read more</a></p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.databricks.com/blog/model-risk-management-2026-bankers-guide-revised-interagency-guidance">Model Risk Management in 2026: A Banker’s Guide to the Revised Interagency Guidance</a></h2>
+            <p>No date</p>
+            <p>What Changed in the April 2026 MRM GuidanceOn April 17, 2026, the Federal Reserve,...</p>
+        </div>
+      
+        <div class="item">
+            <h2><a href="https://www.databricks.com/blog/openai-gpt-55-now-available-databricks-fully-governed-through-unity-ai-gateway">OpenAI GPT-5.5 + Codex, now available and fully-governed in Databricks</a></h2>
+            <p>No date</p>
+            <p>GPT-5.5 is OpenAI's strongest frontier model for agentic enterprise work, complex...</p>
+        </div>
+      </body></html>
